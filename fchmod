@@ -1,0 +1,7 @@
+#!/bin/bash
+per=$1
+path=$2
+if [ "$path" == "" ]; then
+        path=.
+fi
+find $path -type f -exec chmod $per {} \;
